@@ -123,6 +123,11 @@ console.log(secondBurger.maker.name); --> "Chef Hyur"
 console.log(hamburger.maker.restaurant.name); --> "Hyur's Burgers"
 console.log(secondBurger.maker.restaurant.name); --> undefined Perchè nella seconda copia abbiamo salvato solo "new restaurant" che è una stringa e non un oggetto.
 
+correzione: 
+console.log(hamburger.maker.restaurant.name); --> "Hyur's II"
+console.log(secondBurger.maker.restaurant.name); --> "Hyur's II"
+Totale oggetti: 5
+
 
 🎯 Code Question 6 (Bonus)
 Qual è il metodo migliore per clonare l’oggetto chef, e perché?
@@ -149,4 +154,7 @@ const chef = {
 	}
 }
 
-Risposta: Dipende da cosa ci dobbiamo fare ma dato che ci sono diverse funzioni al suo interno direi reference oppure spread. 
+Risposta: Dipende da cosa ci dobbiamo fare ma dato che ci sono diverse funzioni al suo interno direi reference oppure spread.
+
+Correzione: reference non va perchè bisogna CLONARE quindi la risposta giusta è che non c'è un metodo per fare tutto questo. Possiamo fare un spread annidato.
+
