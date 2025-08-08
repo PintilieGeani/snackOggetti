@@ -39,8 +39,6 @@ In memoria sono stati creati 2 oggetti.
 🏆 Code Question 3
 Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
 
-Risposta: Se ho ben capito come funziona il structuredclone() crea una copia per ogni oggetto anche quelli annidati quindi se il primo oggetto contiene al suo interno altri 2 oggetti, ergo 3 in tutto, allora in memoria saranno creati 6 oggetti.
-
 Codice:
 const hamburger = { 
 	name: "Cheese Burger", 
@@ -58,6 +56,8 @@ const hamburger = {
 
 const secondBurger = structuredClone(hamburger);
 const thirdBurger = structuredClone(hamburger);
+
+Risposta: Se ho ben capito come funziona il structuredclone() crea una copia per ogni oggetto anche quelli annidati quindi se il primo oggetto contiene al suo interno altri 2 oggetti, ergo 3 in tutto, allora in memoria saranno creati 6 oggetti.
 
 
 🏆 Code Question 4
